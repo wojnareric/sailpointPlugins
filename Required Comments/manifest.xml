@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Plugin PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Plugin name="RequireAccessRequestComments" displayName="Require Access Request Comments" version="0.5.0.0" minSystemVersion="7.2" certificationLevel="Gold">
+	<Attributes>
+		<Map>
+			<entry key="snippets">
+				<value>
+					<List>
+						<Snippet regexPattern=".*accessRequest.*" rightRequired="">							
+			  		 <Scripts>
+                <String>ui/js/requireComments.js</String>
+              </Scripts>
+						</Snippet>
+					</List>
+				</value>
+			</entry>
+		</Map>
+	</Attributes>
+</Plugin>
